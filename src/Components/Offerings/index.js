@@ -70,7 +70,7 @@ function Offerings() {
         <h2 class="gellatio-font" >Offerings</h2>
 
         {OfferingSections.map(offer =>
-          <Card sx={{ borderRadius: '16px' }} className="OfferingCard">
+          <Card  sx={{ borderRadius: '16px' }} className="OfferingCard">
             <img class="OfferingIcon" src={offer.icon} alt="offering icon"></img>
             <h4 className="OfferName">{offer.name}</h4>
             <h6 className="OfferLength">{offer.length}</h6>
@@ -84,28 +84,28 @@ function Offerings() {
                    <Box sx={{ flexGrow: 1 }}>
       <Grid className="homecomingGrid" container spacing={2}>
         <Grid  item xs={4}>
-          <Item>(2) in-person/virtual sessions per month</Item>
+          <Item className="offeringItem">(2) in-person/virtual sessions per month</Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>(2) 30 minute calls per month</Item>
+          <Item className="offeringItem">(2) 30 minute calls per month</Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>Reiki sessions - Clearing old patterns, bringing in new light</Item>
+          <Item className="offeringItem">Reiki sessions - Clearing old patterns, bringing in new light</Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>Mindset Reset – Completely shift the way you think, feel, and see about your reality</Item>
+          <Item className="offeringItem">Mindset Reset – Completely shift the way you think, feel, and see about your reality</Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>Learn new tools to live your most authentic YOU</Item>
+          <Item className="offeringItem">Learn new tools to live your most authentic YOU</Item>
         </Grid>
         <Grid item xs={4}>
-          <Item>RealYOU group gatherings - Seat reserved</Item>
+          <Item className="offeringItem">RealYOU group gatherings - Seat reserved</Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>Accountability Goals - Together we will distinguish goals that will elevate your daily mood/energy to create the life you’ve always desired.</Item>
+          <Item className="offeringItem">Accountability Goals - Together we will distinguish goals that will elevate your daily mood/energy to create the life you’ve always desired.</Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>Hypnotic reprogramming - Personalized scripts to listen to each night before bed or in a relaxing state</Item>
+          <Item className="offeringItem">Hypnotic reprogramming - Personalized scripts to listen to each night before bed or in a relaxing state</Item>
         </Grid>
       </Grid>
     </Box>

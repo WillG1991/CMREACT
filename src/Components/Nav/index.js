@@ -78,8 +78,8 @@ function Nav(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav">
-        <Toolbar>
+      <AppBar  id="navigationFull" component="nav">
+        <Toolbar className="navFull" >
           <IconButton
             color="inherit"
             aria-label="open drawer"
