@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/CMREACT/static/css/main.fdd6a538.css",
+    "main.js": "/CMREACT/static/js/main.abf28537.js",
+    "static/js/787.81846fcd.chunk.js": "/CMREACT/static/js/787.81846fcd.chunk.js",
+    "static/media/ChristinaPicture.png": "/CMREACT/static/media/ChristinaPicture.e9327aea60acfd265a8b.png",
+    "static/media/HeroImage.jpg": "/CMREACT/static/media/HeroImage.3db4e5b0edf873eb773a.jpg",
+    "static/media/gellatio.ttf": "/CMREACT/static/media/gellatio.c1385040c9d5e1e13a39.ttf",
+    "static/media/ContactBack.webp": "/CMREACT/static/media/ContactBack.b47972b36aa930db9c3e.webp",
+    "static/media/BodyBack.webp": "/CMREACT/static/media/BodyBack.a8afbf57d4a6bbe88bc4.webp",
+    "static/media/OfferingOneImage.png": "/CMREACT/static/media/OfferingOneImage.ab2391d34275f96ae2ed.png",
+    "static/media/OfferingTwoImage.png": "/CMREACT/static/media/OfferingTwoImage.0168da181341990b80ff.png",
+    "static/media/OfferingFourImage.png": "/CMREACT/static/media/OfferingFourImage.f0742e4be2a556dce015.png",
+    "static/media/OfferingBackImage.png": "/CMREACT/static/media/OfferingBackImage.9c72dc11d2a754deeed3.png",
+    "static/media/OfferingButton.png": "/CMREACT/static/media/OfferingButton.c6bb3abc21833259c75b.png",
+    "static/media/FAQImage.png": "/CMREACT/static/media/FAQImage.22400a8a49f6c87aba2b.png",
+    "static/media/NavBarImage.png": "/CMREACT/static/media/NavBarImage.d786c2e7540738d2c562.png",
+    "static/media/ReviewsImage.png": "/CMREACT/static/media/ReviewsImage.46466cbc578311a397f9.png",
+    "static/media/react-bootstrap-carousel.eot": "/CMREACT/static/media/react-bootstrap-carousel.1a0fe919ea31a13740d3.eot",
+    "static/media/react-bootstrap-carousel.ttf": "/CMREACT/static/media/react-bootstrap-carousel.f41331129badd2b01fc7.ttf",
+    "static/media/react-bootstrap-carousel.woff": "/CMREACT/static/media/react-bootstrap-carousel.96e0693824065d5b7d56.woff",
+    "static/media/react-bootstrap-carousel.svg": "/CMREACT/static/media/react-bootstrap-carousel.190d0d1bf1c865be7a1b.svg",
+    "index.html": "/CMREACT/index.html",
+    "main.fdd6a538.css.map": "/CMREACT/static/css/main.fdd6a538.css.map",
+    "main.abf28537.js.map": "/CMREACT/static/js/main.abf28537.js.map",
+    "787.81846fcd.chunk.js.map": "/CMREACT/static/js/787.81846fcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdd6a538.css",
+    "static/js/main.abf28537.js"
+  ]
+}
