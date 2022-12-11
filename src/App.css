@@ -152,18 +152,34 @@ h6,
 
 /* -----------------NAV BAR SECTION START-------------------- */
 
+.navAppBar {
+transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+/* box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px; */
+display: flex;
+width: 100%;
+box-sizing: border-box;
+flex-shrink: 0;
+position: fixed;
+z-index: 1100;
+top: 0px;
+left: auto;
+right: 0px;
+background-color: rgb(0 0 0 / 8%) !important;
+color: rgb(255, 255, 255);
+}
+
 /* nav bar background color */
-.css-11b3ww9-MuiPaper-root-MuiAppBar-root {
+/* .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
   background-color: #0000003d !important;
   height: 7%;
-}
+} */
 
 
 
 /* nav icon image to the left */
-.css-p7bec2-MuiTypography-root {
-    display: block;
-    text-align: left;
+.navIconDisplay {
+    display: block !important;
+    text-align: left !important;
 }
 
 .navButton {
@@ -234,7 +250,7 @@ display: -webkit-inline-box;
   top: 0;
   left: auto;
   right: 0;
-  background-color: transparent;
+  background-color: transparent !important;
   color: #fff;
 }
 
@@ -646,6 +662,14 @@ footer {
 /* --------------------------- Media Screen Sizing ---------------------- */
 
 @media only screen and (max-width: 600px) {
+
+  .css-wf16b5 {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  
+}
+
+
   .Hero {
     font-size: 2.00rem;
     line-height: 3rem;
@@ -725,7 +749,7 @@ footer {
 
 
 /* nav bar  */
-.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+.navFull {
   background-color: transparent !important;
   color: #f8f9fa !important;
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -739,7 +763,6 @@ footer {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100%;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -747,21 +770,58 @@ footer {
   -webkit-overflow-scrolling: touch;
   position: fixed;
   
-  height: 300px !important;
+  height: 50px !important;
   width: 100% !important;
   outline: 0;
   left: 0;
 }
 
+.navImage {
+  display: none;
+}
+
+.mobileNavDrawer {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 10px -5px, rgb(0 0 0 / 14%) 0px 16px 24px 2px, rgb(0 0 0 / 12%) 0px 6px 30px 5px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 33% !important;
+  width: 100% !important;
+  background-color: transparent !important;
+  flex: 1 0 auto;
+  z-index: 1200;
+  position: fixed;
+  top: 0px;
+  outline: 0px;
+  left: 0px;
+  color: white !important;
+}
+
+.mobileDrawer {
+  background-color: transparent !important;
+  color: rgba(0, 0, 0, 0.87);
+  /* transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
+  box-shadow: none !important;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 0% !important;
+  flex: 1 0 auto;
+  z-index: 1200;
+  position: fixed;
+  top: 0px;
+  outline: 0px;
+  left: 0px;
+}
+
 /* homecoming offerings bottom */
-.css-1633um2-MuiPaper-root {
-  background-color: #fff;
+.OfferingIcon {
+  background-color: #d5c1f5;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-  background-color: #fff;
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 400;
   font-size: .5rem !important;
@@ -773,6 +833,26 @@ footer {
 }
 
 
+li {
+text-decoration: white;
+}
 
 
+.offeringItem {
+  background-color: #d5c1f5 !important;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  background-color: #fff;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 300 !important;
+  font-size: 0.5rem !important;
+  line-height: 1 !important;
+  letter-spacing: 0.01071em;
+  padding: 8px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
 }
