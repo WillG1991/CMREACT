@@ -13,17 +13,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import NavBarImage from '../../assets/images/NavBarImage.png'
 
-
-
 const drawerWidth = 240;
 const navItems = [
   {
     name: "HOME",
     link: "/"
   },
+
 ];
 
-function FAQNav(props) {
+function Nav(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -32,21 +31,19 @@ function FAQNav(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      
-      <Typography className="navIcon" variant="h6" sx={{ my: 2 }}>
-      <a href="/">
-      <img className="navImage" alt="lotus flower home button" src={NavBarImage}></img>
-        </a>
+    <Box id="boxMob" className="mobileNavDrawer" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+      <Typography id="typographyMob" className="navIcon" variant="h6" sx={{ my: 2 }}>
+        <span onClick={() => props.handlePageChange('Home')}>
+          <img className="navImage" alt="lotus flower home button" src={NavBarImage}></img>
+        </span>
       </Typography>
-      
       <Divider />
-      <List>
+      <List id="listMob">
         {navItems.map((item) => (
-          <ListItem className="navText" key={item.name} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}
-            component="a" href={item.link}>
-              <ListItemText primary={item.name} />
+          <ListItem id="listItemMob" className="navText" key={item.name} disablePadding>
+            <ListItemButton id="listItemButtonPRZ" sx={{ textAlign: 'center' }}
+              component="a" href={item.link}>
+              <ListItemText id="listItemButtonText" primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -58,9 +55,9 @@ function FAQNav(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav">
-        <Toolbar>
-          <IconButton
+      <AppBar className="navAppBar" id="navigationFull" component="nav">
+        <Toolbar id="Toolbar" className="navFull" >
+          <IconButton id="IconButton"
             color="inherit"
             aria-label="open drawer"
             edge="start"
@@ -69,26 +66,27 @@ function FAQNav(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          <Typography className="navIconDisplay" id="Typography"
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            <a href="/">
-            <img className="navImage" alt="lotus flower home button" src={NavBarImage}></img>
-            </a>
+            <span onClick={() => props.handlePageChange('Home')} >
+              <img className="navImage" alt="lotus flower home button" src={NavBarImage}></img>
+            </span>
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box id="Box" sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <a className="navButton" href={item.link} key={item.name} sx={{ color: '#fff' }}>
-                {item.name} 
+              <a className="navButton" href={item.link} key={item.name} sx={{ color: 'transparent' }}>
+                {item.name}
               </a>
             ))}
           </Box>
+
         </Toolbar>
       </AppBar>
-      <Box component="nav">
-        <Drawer
+      <Box id="lowerBox" component="nav">
+        <Drawer className="mobileDrawer" id="lowerDrawer"
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -104,11 +102,11 @@ function FAQNav(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box component="main" sx={{ p: 3 }}>
+      <Box id="lowlowbox" component="main" sx={{ p: 3 }}>
         <Toolbar />
       </Box>
     </Box>
   );
 };
 
-export default FAQNav;
+export default Nav;

@@ -1,5 +1,4 @@
 import React from "react";
-import FAQNav from "../../Components/FAQNav";
 import Footer from "../../Components/Footer";
 import FAQImage from "../../assets/images/FAQImage.png"
 import "../../App.css"
@@ -40,7 +39,6 @@ const FAQSections = [
 function FAQ() {
     return (
       <body className="FAQBody">
-    <FAQNav/>
     <section id="FAQ">
         <img className="FAQIcon" src={FAQImage} alt="mindfulness ascension emotional release body work holistic health "/>
         <h1 className="gellatio-font">Frequently Asked Questions</h1>

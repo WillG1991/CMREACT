@@ -13,10 +13,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import NavBarImage from '../../assets/images/NavBarImage.png'
 
-
-
-
-
 const drawerWidth = 240;
 const navItems = [
   {
@@ -39,7 +35,6 @@ const navItems = [
     name: "CONTACT",
     link: "#Contact"
   },
- 
 ];
 
 function Nav(props) {
@@ -52,23 +47,24 @@ function Nav(props) {
 
   const drawer = (
     <Box id="boxMob" className="mobileNavDrawer" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      
       <Typography id="typographyMob" className="navIcon" variant="h6" sx={{ my: 2 }}>
-      <a href="/">
-      <img className="navImage" alt="lotus flower home button" src={NavBarImage}></img>
-        </a>
+        <span onClick={() => props.handlePageChange('Home')}>
+          <img className="navImage" alt="lotus flower home button" src={NavBarImage}></img>
+        </span>
       </Typography>
-      
       <Divider />
       <List id="listMob">
         {navItems.map((item) => (
           <ListItem id="listItemMob" className="navText" key={item.name} disablePadding>
             <ListItemButton id="listItemButtonPRZ" sx={{ textAlign: 'center' }}
-            component="a" href={item.link}>
+              component="a" href={item.link}>
               <ListItemText id="listItemButtonText" primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
+        <span onClick={() => props.handlePageChange('FAQ')} className="navButton" sx={{ color: 'transparent' }}>
+          FAQ
+        </span>
       </List>
     </Box>
   );
@@ -77,7 +73,7 @@ function Nav(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar className="navAppBar"  id="navigationFull" component="nav">
+      <AppBar className="navAppBar" id="navigationFull" component="nav">
         <Toolbar id="Toolbar" className="navFull" >
           <IconButton id="IconButton"
             color="inherit"
@@ -93,17 +89,19 @@ function Nav(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            <a href="/">
-            <img className="navImage" alt="lotus flower home button" src={NavBarImage}></img>
-            </a>
+            <span onClick={() => props.handlePageChange('Home')} >
+              <img className="navImage" alt="lotus flower home button" src={NavBarImage}></img>
+            </span>
           </Typography>
-          
           <Box id="Box" sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <a className="navButton" href={item.link} key={item.name} sx={{ color: 'transparent' }}>
-                {item.name} 
+                {item.name}
               </a>
             ))}
+            <span onClick={() => props.handlePageChange('FAQ')} className="navButton" sx={{ color: 'transparent' }}>
+              FAQ
+            </span>
           </Box>
 
         </Toolbar>

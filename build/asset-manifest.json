@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CMREACT/static/css/main.4d611f9f.css",
-    "main.js": "/CMREACT/static/js/main.1e707deb.js",
+    "main.css": "/CMREACT/static/css/main.73aa1129.css",
+    "main.js": "/CMREACT/static/js/main.22e1c0cd.js",
     "static/js/787.81846fcd.chunk.js": "/CMREACT/static/js/787.81846fcd.chunk.js",
     "static/media/ChristinaPicture.png": "/CMREACT/static/media/ChristinaPicture.e9327aea60acfd265a8b.png",
     "static/media/HeroImage.jpg": "/CMREACT/static/media/HeroImage.3db4e5b0edf873eb773a.jpg",
@@ -13,6 +13,7 @@
     "static/media/OfferingFourImage.png": "/CMREACT/static/media/OfferingFourImage.f0742e4be2a556dce015.png",
     "static/media/OfferingBackImage.png": "/CMREACT/static/media/OfferingBackImage.9c72dc11d2a754deeed3.png",
     "static/media/OfferingButton.png": "/CMREACT/static/media/OfferingButton.c6bb3abc21833259c75b.png",
+    "static/media/FAQImage.png": "/CMREACT/static/media/FAQImage.22400a8a49f6c87aba2b.png",
     "static/media/NavBarImage.png": "/CMREACT/static/media/NavBarImage.d786c2e7540738d2c562.png",
     "static/media/ReviewsImage.png": "/CMREACT/static/media/ReviewsImage.46466cbc578311a397f9.png",
     "static/media/react-bootstrap-carousel.eot": "/CMREACT/static/media/react-bootstrap-carousel.1a0fe919ea31a13740d3.eot",
@@ -20,12 +21,12 @@
     "static/media/react-bootstrap-carousel.woff": "/CMREACT/static/media/react-bootstrap-carousel.96e0693824065d5b7d56.woff",
     "static/media/react-bootstrap-carousel.svg": "/CMREACT/static/media/react-bootstrap-carousel.190d0d1bf1c865be7a1b.svg",
     "index.html": "/CMREACT/index.html",
-    "main.4d611f9f.css.map": "/CMREACT/static/css/main.4d611f9f.css.map",
-    "main.1e707deb.js.map": "/CMREACT/static/js/main.1e707deb.js.map",
+    "main.73aa1129.css.map": "/CMREACT/static/css/main.73aa1129.css.map",
+    "main.22e1c0cd.js.map": "/CMREACT/static/js/main.22e1c0cd.js.map",
     "787.81846fcd.chunk.js.map": "/CMREACT/static/js/787.81846fcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d611f9f.css",
-    "static/js/main.1e707deb.js"
+    "static/css/main.73aa1129.css",
+    "static/js/main.22e1c0cd.js"
   ]
 }

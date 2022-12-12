@@ -79,8 +79,8 @@ function Offerings() {
             {offer.name === "Homecoming"
               ? (
                 <div>
-                  <h5 class="lead">In person meeting or virtual</h5>
-                  <h5 class="lead">Includes:</h5>
+                  <h5 class="homecomingCenterText">In person meeting or virtual</h5>
+                  <h5 class="homecomingCenterText">Includes:</h5>
                    <Box sx={{ flexGrow: 1 }}>
       <Grid className="homecomingGrid" container spacing={2}>
         <Grid  item xs={4}>
