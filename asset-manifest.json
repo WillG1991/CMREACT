@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CMREACT/static/css/main.624d35e3.css",
-    "main.js": "/CMREACT/static/js/main.6fc89f2a.js",
+    "main.css": "/CMREACT/static/css/main.0a220362.css",
+    "main.js": "/CMREACT/static/js/main.85fe239d.js",
     "static/js/787.81846fcd.chunk.js": "/CMREACT/static/js/787.81846fcd.chunk.js",
     "static/media/ChristinaPicture.png": "/CMREACT/static/media/ChristinaPicture.e9327aea60acfd265a8b.png",
     "static/media/HeroImage.jpg": "/CMREACT/static/media/HeroImage.3db4e5b0edf873eb773a.jpg",
@@ -21,12 +21,12 @@
     "static/media/react-bootstrap-carousel.woff": "/CMREACT/static/media/react-bootstrap-carousel.96e0693824065d5b7d56.woff",
     "static/media/react-bootstrap-carousel.svg": "/CMREACT/static/media/react-bootstrap-carousel.190d0d1bf1c865be7a1b.svg",
     "index.html": "/CMREACT/index.html",
-    "main.624d35e3.css.map": "/CMREACT/static/css/main.624d35e3.css.map",
-    "main.6fc89f2a.js.map": "/CMREACT/static/js/main.6fc89f2a.js.map",
+    "main.0a220362.css.map": "/CMREACT/static/css/main.0a220362.css.map",
+    "main.85fe239d.js.map": "/CMREACT/static/js/main.85fe239d.js.map",
     "787.81846fcd.chunk.js.map": "/CMREACT/static/js/787.81846fcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.624d35e3.css",
-    "static/js/main.6fc89f2a.js"
+    "static/css/main.0a220362.css",
+    "static/js/main.85fe239d.js"
   ]
 }
