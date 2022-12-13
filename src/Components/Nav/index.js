@@ -89,9 +89,9 @@ function Nav(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            <span onClick={() => props.handlePageChange('Home')} >
+            <a href="#Home" >
               <img className="navImage" alt="lotus flower home button" src={NavBarImage}></img>
-            </span>
+            </a>
           </Typography>
           <Box id="Box" sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (

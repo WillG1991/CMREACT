@@ -41,8 +41,8 @@ function Nav(props) {
       <List id="listMob">
         {navItems.map((item) => (
           <ListItem id="listItemMob" className="navText" key={item.name} disablePadding>
-            <ListItemButton id="listItemButtonPRZ" sx={{ textAlign: 'center' }}
-              component="a" span={item.link}>
+            <ListItemButton onClick={() => props.handlePageChange('Home')} id="listItemButtonPRZ" sx={{ textAlign: 'center' }}
+              component="span">
               <ListItemText id="listItemButtonText" primary={item.name} />
             </ListItemButton>
           </ListItem>
@@ -77,9 +77,9 @@ function Nav(props) {
           </Typography>
           <Box id="Box" sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <a className="navButton" span={item.link} key={item.name} sx={{ color: 'transparent' }}>
+              <span onClick={() => props.handlePageChange('Home')} className="navButton" key={item.name} sx={{ color: 'transparent' }}>
                 {item.name}
-              </a>
+              </span>
             ))}
           </Box>
 
