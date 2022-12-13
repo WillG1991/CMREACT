@@ -42,7 +42,7 @@ function Nav(props) {
         {navItems.map((item) => (
           <ListItem id="listItemMob" className="navText" key={item.name} disablePadding>
             <ListItemButton id="listItemButtonPRZ" sx={{ textAlign: 'center' }}
-              component="a" href={item.link}>
+              component="a" span={item.link}>
               <ListItemText id="listItemButtonText" primary={item.name} />
             </ListItemButton>
           </ListItem>
@@ -77,7 +77,7 @@ function Nav(props) {
           </Typography>
           <Box id="Box" sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <a className="navButton" href={item.link} key={item.name} sx={{ color: 'transparent' }}>
+              <a className="navButton" span={item.link} key={item.name} sx={{ color: 'transparent' }}>
                 {item.name}
               </a>
             ))}
