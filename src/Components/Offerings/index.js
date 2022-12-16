@@ -37,7 +37,7 @@ function Offerings() {
       icon: OfferTwoImage,
       name: "Reiki + Hypnotic Reprogramming",
       length: "Session: 90 Minutes.",
-      price: "Investment: $150.00",
+      price: "Investment: $185.00",
       description: "These two healing modalities combined produce a powerful reset to the mind and body. You are limitless and abundant, but only to the extent of your belief system. Allow the power of reiki and hypnosis to bring a renewed sense of who you truly are. *Hypnotic suggestions are client specific. *   You will receive a personal hypnotic script that will be tailored to your needs. In addition, you will receive a separate recording that can be listened to before sleep. Example of topics - Self Esteem + Confidence, Healthier Eating Habits, Moving through a breakup, New employment confidence, Pregnancy Journey, IVF Journey, New Motherhood Journey, Relationships, and so much more.",
       button: "https://calendly.com/christinaserafina/reiki-hypnotic-reprogramming?back=1&month=2022-10"
     },
