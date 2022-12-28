@@ -1,6 +1,9 @@
 import React from "react";
 import ChristinaPicture from "../../assets/images/ChristinaPicture.png"
 import Container from '@mui/material/Container';
+import Fade from 'react-reveal/Fade';
+
+
 
 function MeetMe() {
 
@@ -43,10 +46,15 @@ function MeetMe() {
         
             <section id="MeetMe">
             <Container className="MeetMeBack">
+                
                 <h2 class="gellatio-font" >Meet Christina:</h2>
 <img className="ChristinaPicture" src={ChristinaPicture} alt="mindfulness ascension emotional release body work holistic health "/>
 {meetMeSections.map(offer =>
+        <Fade >
+
+
                   <h2 className="lead MeetMeParagraphs">{offer.description}</h2>
+                  </Fade>
                 )}
                 </Container>
 </section>

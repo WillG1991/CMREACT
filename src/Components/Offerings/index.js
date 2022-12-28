@@ -10,6 +10,12 @@ import OfferTwoImage from "../../assets/images/OfferingTwoImage.png"
 import OfferThreeImage from "../../assets/images/OfferingThreeImage.png"
 import OfferFourImage from "../../assets/images/OfferingFourImage.png"
 import OfferingButton from "../../assets/images/OfferingButton.png"
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+
+
+
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -63,19 +69,37 @@ function Offerings() {
   ]
 
 
+
   return (
 
     <section id="Offerings">
       <Container>
-        <h2 class="gellatio-font" >Offerings</h2>
+      
+        <h2 style={{ fontFamily: 'gellatio',  }} class="gellatio-font" >Offerings</h2>
+        
 
         {OfferingSections.map(offer =>
+        
           <Card  sx={{ borderRadius: '16px' }} className="OfferingCard">
+                   
+
             <img class="OfferingIcon" src={offer.icon} alt="offering icon"></img>
+            <Slide top>
+
             <h4 className="OfferName">{offer.name}</h4>
+            </Slide>
+            <Slide left>
+
             <h6 className="OfferLength">{offer.length}</h6>
+            </Slide>
+            <Slide right>
+
             <h6 className="OfferPrice">{offer.price}</h6>
+            </Slide>
+            <Slide bottom>
+
             <p className="OfferingDescriptions textThroughout">{offer.description}</p>
+            </Slide>
             {offer.name === "Homecoming"
               ? (
                 <div>
@@ -113,8 +137,11 @@ function Offerings() {
               )
               : null}
             <a target="_blank" rel="noreferrer" className="OfferingATag" href={offer.button} >
+            <Fade bottom>
               <img className="ScheduleButton" src={OfferingButton} alt="Schedule Button" />
+              
               <p className="OfferSchedule">Schedule</p>
+              </Fade>
             </a>
           </Card>
         )}

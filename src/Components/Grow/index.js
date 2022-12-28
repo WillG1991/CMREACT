@@ -1,5 +1,7 @@
 import React from "react";
 import GrowImage from "../../assets/images/GrowImage.png"
+import Fade from 'react-reveal/Fade';
+
 
 
 
@@ -27,10 +29,17 @@ function Grow() {
   
       
       <section id="Grow">
+        <Fade bottom>
         <img className="GrowIcon" src={GrowImage} alt="mindfulness ascension emotional release body work holistic health "/>
+        </Fade>
+
         <h1 className="gellatio-font">Grow</h1>
+        
         {GrowSections.map(section =>
+                <Fade bottom>
+
           <h2 className="lead GrowParagraphs">{section.description}</h2>
+          </Fade>
         )}
       </section>
       
