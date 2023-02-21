@@ -4,11 +4,7 @@ import FAQImage from "../../assets/images/FAQImage.png"
 import "../../App.css"
 
 const FAQSections = [
-  {
-    id: 1,
-    question: "What do I wear?",
-    answer: "Come in comfortable clothing. You are fully clothed for the entire session. I have a table warmer with blankets so if you get hot easily, please come in tank top, t- shirt, sports bra, etc. Whatever makes you most comfortable."
-  },
+
   {
     id: 2,
     question: "It's my first time - what should I expect?",
@@ -32,7 +28,7 @@ const FAQSections = [
   {
     id: 6,
     question: "Cancellation Policy",
-    answer: "Every client and every session is different. Please come open to all possibilities! Booking and Cancellation Policy: Please use the link under each session you are looking to schedule. To secure your appointment I require a $50 deposit via Zelle or Venmo for ALL sessions. A 48-hour notice of cancellation is required for your deposit to be refunded. Please text/call 732-887-2792. Thank you!"
+    answer: "Every client and every session is different. Please come open to all possibilities! Booking and Cancellation Policy: Please use the link under each session you are looking to schedule. To secure your appointment I require a $50 deposit via Zelle or Venmo for ALL sessions. A 48-hour notice of cancellation is required for your deposit to be refunded. Please text/call 347-480-8846. Thank you!"
   },
 ]
 
