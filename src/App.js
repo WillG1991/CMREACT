@@ -31,6 +31,7 @@ function App() {
     }
 
     if (currentPage === 'FAQ') {
+      window.scrollTo(0, 0);
       return <>
         <body className="FAQBody">
           <FAQNav currentPage={currentPage} handlePageChange={handlePageChange} />
