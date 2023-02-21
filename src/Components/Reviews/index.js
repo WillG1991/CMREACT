@@ -26,7 +26,7 @@ export default function Reviews() {
   useEffect(() => {
     const placeId = "ChIJcUQQF1CBwokRB-zz3K0pCNo";
     const apiKey = "AIzaSyDkK7xOGH20-Oc5hIoFBCgIds7EnYoQzqs";
-    const url = `/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}`;
+    const url = `https://example.com/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}`;
 
     fetch(url)
       .then(response => response.json())
