@@ -40,7 +40,7 @@ function App() {
     }
   };
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (page) => setCurrentPage(page);   window.scrollTo(0, 0);;
 
   return (
     <div className="App">

@@ -3,6 +3,7 @@ import Footer from "../../Components/Footer";
 import FAQImage from "../../assets/images/FAQImage.png"
 import "../../App.css"
 
+
 const FAQSections = [
 
   {
@@ -31,6 +32,8 @@ const FAQSections = [
     answer: "Every client and every session is different. Please come open to all possibilities! Booking and Cancellation Policy: Please use the link under each session you are looking to schedule. To secure your appointment I require a $50 deposit via Zelle or Venmo for ALL sessions. A 48-hour notice of cancellation is required for your deposit to be refunded. Please text/call 347-480-8846. Thank you!"
   },
 ]
+
+
 
 function FAQ() {
     return (

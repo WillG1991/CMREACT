@@ -44,6 +44,7 @@ function Nav(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+  
 
   const drawer = (
     <Box id="boxMob" className="mobileNavDrawer" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
