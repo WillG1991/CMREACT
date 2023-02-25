@@ -39,7 +39,7 @@ function FAQ() {
     return (
       <body className="FAQBody">
     <section id="FAQ">
-        <img className="FAQIcon" src={FAQImage} alt="mindfulness ascension emotional release body work holistic health "/>
+        <img className="FAQIcon" src={FAQImage} alt="mindfulness ascension emotional release body work holistic health reiki new jersey"/>
         <h1 className="gellatio-font">Frequently Asked Questions</h1>
         <br></br>
         <br></br>
