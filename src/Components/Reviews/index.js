@@ -30,6 +30,7 @@ export default function Reviews() {
     const apiKey = "AIzaSyDkK7xOGH20-Oc5hIoFBCgIds7EnYoQzqs";
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const url = `${proxyUrl}https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}`;
+    console.log(url)
     
     fetch(url)
     .then(response => response.json())
