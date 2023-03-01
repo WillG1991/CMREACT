@@ -19,24 +19,24 @@ function App() {
   const renderPage = () => {
     if (currentPage === 'Home') {
       return <>
-        <body>
+        <div>
           <Grow />
           <MeetMe />
           <Offerings />
           <Reviews />
           <Contact />
-        </body>
-        <Footer />
+          <Footer />
+        </div>
       </>
     }
 
     if (currentPage === 'FAQ') {
       window.scrollTo(0, 0);
       return <>
-        <body className="FAQBody">
+        <div className="FAQBody">
           <FAQNav currentPage={currentPage} handlePageChange={handlePageChange} />
           <FAQ />
-        </body>
+        </div>
       </>
     }
   };

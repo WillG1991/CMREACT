@@ -24,23 +24,21 @@ export default function Reviews() {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    console.log('Fetching reviews...'); // Add this line to log a message to the console
+    
 
     const placeId = "ChIJcUQQF1CBwokRB-zz3K0pCNo";
     const apiKey = "AIzaSyDkK7xOGH20-Oc5hIoFBCgIds7EnYoQzqs";
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const url = `${proxyUrl}https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}`;
-    console.log(url)
+   
     
     fetch(url)
     .then(response => response.json())
     .then(data => {
-      console.log(data); // log the data to the console
       const filteredReviews = data.result.reviews.filter((review) => review.text);
       setReviews(filteredReviews);
     })
     .catch(error => {
-      console.log('API Error:', error);
     });
   
   }, []);
@@ -49,8 +47,8 @@ export default function Reviews() {
     <section id="Reviews">
       <h2 className="gellatio-font">Reviews</h2>
       <Carousel>
-        {reviews.map((review) => (
-          <Carousel.Item interval={5000}>
+        {reviews.map((review, index) => (
+          <Carousel.Item key={index} interval={5000}>
           <Container className="reviewContainer">
   <h3>{getStarRating(review.rating)}</h3>
   <h3 className="lead">{review.text}</h3>

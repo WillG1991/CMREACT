@@ -12,15 +12,12 @@ function Home() {
   return (
     <div className="App">
       <header className="App-header">
-    
       </header>
-      <body>
       <Grow/>
       <MeetMe/>
       <Offerings/>
       <Reviews/>
       <Contact/>
-      </body>
       <Footer/>
     </div>
    

@@ -28,20 +28,19 @@ function Grow() {
   return (
   
       
-      <section id="Grow">
-        <Fade bottom>
-        <img className="GrowIcon" src={GrowImage} alt="mindfulness ascension emotional release body work holistic health "/>
-        </Fade>
+<section id="Grow">
+  <Fade bottom>
+    <img className="GrowIcon" src={GrowImage} alt="mindfulness ascension emotional release body work holistic health "/>
+  </Fade>
 
-        <h1 className="gellatio-font">Grow</h1>
+  <h1 className="gellatio-font">Grow</h1>
         
-        {GrowSections.map(section =>
-                <Fade bottom>
-
-          <h2 className="lead GrowParagraphs">{section.description}</h2>
-          </Fade>
-        )}
-      </section>
+  {GrowSections.map((section, index) =>
+    <Fade key={index} bottom>
+      <h2 className="lead GrowParagraphs">{section.description}</h2>
+    </Fade>
+  )}
+</section>
       
       
     
