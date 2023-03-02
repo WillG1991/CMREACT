@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container } from "@mui/system";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.css";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
+import { GoogleApiWrapper } from 'google-maps-react';
 
 function getStarRating(rating) {
   let stars = '';
@@ -20,28 +21,23 @@ function capitalizeWords(str) {
     .join(' ');
 }
 
-export default function Reviews() {
+function Reviews({ google, placeId }) {
   const [reviews, setReviews] = useState([]);
 
-  useEffect(() => {
-    
+  React.useEffect(() => {
+    const service = new google.maps.places.PlacesService(document.createElement('div'));
+    const request = {
+      placeId: "ChIJcUQQF1CBwokRB-zz3K0pCNo",
+      fields: ['reviews'],
+    };
 
-    const placeId = "ChIJcUQQF1CBwokRB-zz3K0pCNo";
-    const apiKey = "AIzaSyDkK7xOGH20-Oc5hIoFBCgIds7EnYoQzqs";
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    const url = `${proxyUrl}https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}`;
-   
-    
-    fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      const filteredReviews = data.result.reviews.filter((review) => review.text);
-      setReviews(filteredReviews);
-    })
-    .catch(error => {
+    service.getDetails(request, (place, status) => {
+      if (status === google.maps.places.PlacesServiceStatus.OK) {
+        const filteredReviews = place.reviews.filter((review) => review.text);
+        setReviews(filteredReviews);
+      }
     });
-  
-  }, []);
+  }, [google, placeId]);
 
   return (
     <section id="Reviews">
@@ -49,14 +45,18 @@ export default function Reviews() {
       <Carousel>
         {reviews.map((review, index) => (
           <Carousel.Item key={index} interval={5000}>
-          <Container className="reviewContainer">
-  <h3>{getStarRating(review.rating)}</h3>
-  <h3 className="lead">{review.text}</h3>
-  <p>{capitalizeWords(review.author_name)}</p>
-</Container>
+            <Container className="reviewContainer">
+              <h3>{getStarRating(review.rating)}</h3>
+              <h3 className="lead">{review.text}</h3>
+              <p>{capitalizeWords(review.author_name)}</p>
+            </Container>
           </Carousel.Item>
         ))}
       </Carousel>
     </section>
   );
 }
+
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyDkK7xOGH20-Oc5hIoFBCgIds7EnYoQzqs',
+})(Reviews);
