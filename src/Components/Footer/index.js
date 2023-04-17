@@ -19,12 +19,12 @@ function Footer() {
 <a href="tel:347-480-8846" style={{ textDecoration: 'none', color: 'white' }}>347-480-8846</a>
 
                          
-                        <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.09)' }}>
-      &copy; {new Date().getFullYear()} Copyright:{' '}
-      <a className='text-dark' href="christinaserafina.com">
-      Christina Serfina Healing
-      </a>
-    </div>
+<div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.09)' }}>
+  &copy; {new Date().getFullYear()} Copyright:{' '}
+  <span className='text-dark'>
+    Christina Serfina Healing
+  </span>
+</div>
                                  
   </footer>
       
